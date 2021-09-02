@@ -1,1 +1,1 @@
-from angles import angles
+from .angles import angles

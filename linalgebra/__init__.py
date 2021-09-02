@@ -1,2 +1,2 @@
-from matrix import matrix
-from vector import vector
+from .matrix import Matrix
+from .vector import Vector2D
