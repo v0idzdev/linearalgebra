@@ -4,11 +4,6 @@ import operator
 import sys
 
 
-class MatrixError(Exception):
-    # An exception class for matrices
-    pass
-
-
 class Matrix:
 
     # Constructor for a matrix
@@ -86,7 +81,7 @@ class Matrix:
 
         # If ranks aren't equal, raise exception
         if self.get_rank() != matrix.get_rank():
-            raise MatrixError("Ranks must be equal.")
+            raise TypeError("Ranks must be equal.")
 
         # Sets up a matrix for return
         return_ = Matrix(self.m, self.n)
@@ -112,7 +107,7 @@ class Matrix:
 
         # If ranks aren't equal, raise exception
         if self.get_rank() != matrix.get_rank():
-            raise MatrixError("Ranks must be equal.")
+            raise TypeError("Ranks must be equal.")
 
         # Sets up a matrix for return
         return_ = Matrix(self.m, self.n)
@@ -139,7 +134,7 @@ class Matrix:
         mat_m, mat_n = matrix.get_rank()
 
         if self.n != mat_m:  # If can't be multiplied
-            raise MatrixError("Can't be multiplied.")
+            raise TypeError("Can't be multiplied.")
 
         mat_t = matrix.get_transpose()
         mul_matrix = Matrix(self.m, mat_n)
@@ -188,7 +183,7 @@ class Matrix:
 
         # If row length inconsistent raise error
         if any([len(row) != n for row in rows[1:]]):
-            raise MatrixError("Inconsistent row length")
+            raise TypeError("Inconsistent row length")
 
         # Makes an empty matrix
         matrix = Matrix(m, n, init=False)

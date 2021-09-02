@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.1'
+VERSION = '0.1.0'
 DESCRIPTION = 'Linear algebra tools'
 LONG_DESCRIPTION = 'Linear algebra tools, including 2D vectors and matrices'
 
