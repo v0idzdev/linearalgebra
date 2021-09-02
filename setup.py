@@ -9,6 +9,7 @@ setup(  # Setting up
 
     # the name must match the
     # folder name 'linalgebra'
+
     name="linalgebra",
     version=VERSION,
     author="Matthew G. Flegg",
@@ -24,11 +25,10 @@ setup(  # Setting up
     keywords=['python', 'package'],
     classifiers=[  # Classifiers
 
-        "Development Status :: 1 - Alpha",
+        "Development Status :: 3 - Alpha",
         "Intended Audience :: Education",
         "Programming Language :: Python :: 3",
         "Operating System :: Microsoft :: Windows",
-        "Operating System :: Linux :: Debian",
-        "Operating System :: Linux :: Ubuntu",
+        "Operating System :: MacOS :: MacOS X",
     ]
 )
