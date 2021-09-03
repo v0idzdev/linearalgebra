@@ -4,8 +4,7 @@ import math
 class Vector3D:
 
     """The Vector3D object we construct in the 
-  if not isinstance(other, Vector2D):  # Raises error if not instance
-            raise TypeError('Can only take dot product of two vectors')     __init__ method has cartesian co-ordinates"""
+       __init__ method has cartesian co-ordinates"""
 
     # Vector3D constructor
     def __init__(self, x, y, z):
