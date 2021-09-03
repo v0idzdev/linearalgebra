@@ -41,7 +41,7 @@ class Vector2D:
         # If 'scalar' passed in is a scalar calculate product
         if isinstance(scalar, int) or isinstance(scalar, float):
 
-            # Returns both components multiplies by scalar
+            # Returns both components multiplied by scalar
             return Vector2D(self.x * scalar, self.y * scalar)
 
         # If 'scalar' passed in isn't actually a scalar throw an error
